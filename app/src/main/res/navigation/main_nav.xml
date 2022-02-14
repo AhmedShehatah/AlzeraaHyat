@@ -18,5 +18,14 @@
         android:id="@+id/fragmentTypesOfCourses"
         android:name="com.creativa.alzeraahyat.FragmentTypesOfCourses"
         android:label="fragment_types_of_courses"
-        tools:layout="@layout/fragment_types_of_courses" />
+        tools:layout="@layout/fragment_types_of_courses" >
+        <action
+            android:id="@+id/action_fragmentTypesOfCourses_to_coursesFragment"
+            app:destination="@id/coursesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coursesFragment"
+        android:name="com.creativa.alzeraahyat.CoursesFragment"
+        android:label="fragment_courses"
+        tools:layout="@layout/fragment_courses" />
 </navigation>

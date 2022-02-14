@@ -2,6 +2,7 @@ package com.creativa.alzeraahyat
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.creativa.alzeraahyat.databinding.TypesModelBinding
 
@@ -26,7 +27,7 @@ class TypesOfCoursesAdapter(private val list: ArrayList<String>) :
         val item = list[position]
         holder.text.text = item
         holder.root.setOnClickListener {
-            
+            it.findNavController().navigate(R.id.action_fragmentTypesOfCourses_to_coursesFragment)
         }
 
     }
