@@ -9,6 +9,7 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
+            android:id="@+id/course_price"
             android:layout_alignParentLeft="true"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -30,11 +31,11 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/course_content"
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="3">
+            android:orientation="vertical">
 
 
             <TextView
@@ -45,6 +46,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="محتوى الكورس"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="anythoing \n \n eje"/>
         </LinearLayout>
     </RelativeLayout>
 </ScrollView>
