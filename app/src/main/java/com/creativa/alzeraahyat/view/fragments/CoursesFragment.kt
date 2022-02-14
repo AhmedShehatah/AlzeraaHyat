@@ -16,6 +16,7 @@ class CoursesFragment : BaseFragment<FragmentCoursesBinding>() {
     private lateinit var navController: NavController
     override fun setupOnViewCreated(view: View) {
         navController = Navigation.findNavController(view)
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
