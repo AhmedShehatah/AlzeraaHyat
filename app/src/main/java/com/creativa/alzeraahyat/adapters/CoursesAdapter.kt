@@ -1,14 +1,16 @@
-package com.creativa.alzeraahyat
+package com.creativa.alzeraahyat.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.creativa.alzeraahyat.R
 import com.creativa.alzeraahyat.databinding.ItemCourseBinding
+import com.creativa.alzeraahyat.models.Course
 
 class CoursesAdapter(private val list: ArrayList<Course>) :
     RecyclerView.Adapter<CoursesAdapter.ViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CoursesAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
             ItemCourseBinding.inflate(
                 LayoutInflater.from(parent.context),

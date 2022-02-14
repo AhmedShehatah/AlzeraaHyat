@@ -1,4 +1,4 @@
-package com.creativa.alzeraahyat
+package com.creativa.alzeraahyat.view.fragments
 
 import android.app.Dialog
 import android.content.Context
@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.viewbinding.ViewBinding
+import com.creativa.alzeraahyat.R
 
 
 abstract class BaseFragment<T : ViewBinding> : Fragment() {

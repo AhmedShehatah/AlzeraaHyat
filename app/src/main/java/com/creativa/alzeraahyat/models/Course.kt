@@ -1,4 +1,4 @@
-package com.creativa.alzeraahyat
+package com.creativa.alzeraahyat.models
 
 data class Course(
     val image: String,

@@ -1,9 +1,10 @@
-package com.creativa.alzeraahyat
+package com.creativa.alzeraahyat.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.creativa.alzeraahyat.R
 import com.creativa.alzeraahyat.databinding.TypesModelBinding
 
 class TypesOfCoursesAdapter(private val list: ArrayList<String>) :
