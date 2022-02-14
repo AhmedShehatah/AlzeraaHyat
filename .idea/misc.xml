@@ -3,17 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MVP/AlzeraaHyat/app/src/main/res/drawable/ic_launcher_background.xml" value="0.12" />
+        <entry key="..\:/MVP/AlzeraaHyat/app/src/main/res/layout/course_gallery.xml" value="0.2234375" />
+        <entry key="..\:/MVP/AlzeraaHyat/app/src/main/res/layout/course_info.xml" value="0.4" />
+        <entry key="..\:/MVP/AlzeraaHyat/app/src/main/res/layout/fragment_base.xml" value="0.2234375" />
+        <entry key="..\:/MVP/AlzeraaHyat/app/src/main/res/layout/fragment_course_detials.xml" value="0.2234375" />
+        <entry key="..\:/MVP/AlzeraaHyat/app/src/main/res/layout/fragment_courses.xml" value="0.2234375" />
+        <entry key="..\:/MVP/AlzeraaHyat/app/src/main/res/layout/fragment_types_of_courses.xml" value="0.2234375" />
+        <entry key="..\:/MVP/AlzeraaHyat/app/src/main/res/layout/item_course.xml" value="0.264" />
+        <entry key="..\:/MVP/AlzeraaHyat/app/src/main/res/layout/trainer_info.xml" value="0.4" />
         <entry key="app/src/main/res/drawable/rounded_button.xml" value="0.2965" />
         <entry key="app/src/main/res/drawable/rounded_edittext_register_login.xml" value="0.2965" />
         <entry key="app/src/main/res/drawable/rounded_image.xml" value="0.2965" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35104166666666664" />
         <entry key="app/src/main/res/layout/fragment_base.xml" value="0.35104166666666664" />
-        <entry key="app/src/main/res/layout/fragment_course_detials.xml" value="0.3338541666666667" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.3357664233576642" />
         <entry key="app/src/main/res/layout/fragment_types_of_courses.xml" value="0.35104166666666664" />
-        <entry key="app/src/main/res/layout/item_course.xml" value="0.35052083333333334" />
-        <entry key="app/src/main/res/layout/trainer_info.xml" value="0.35052083333333334" />
-        <entry key="app/src/main/res/layout/types_model.xml" value="0.5" />
       </map>
     </option>
   </component>
