@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.creativa.alzeraahyat.LoginFragment"
+        android:name="com.creativa.alzeraahyat.view.fragments.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -16,7 +16,25 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentTypesOfCourses"
-        android:name="com.creativa.alzeraahyat.FragmentTypesOfCourses"
+        android:name="com.creativa.alzeraahyat.view.fragments.FragmentTypesOfCourses"
         android:label="fragment_types_of_courses"
-        tools:layout="@layout/fragment_types_of_courses" />
+        tools:layout="@layout/fragment_types_of_courses" >
+        <action
+            android:id="@+id/action_fragmentTypesOfCourses_to_coursesFragment"
+            app:destination="@id/coursesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coursesFragment"
+        android:name="com.creativa.alzeraahyat.view.fragments.CoursesFragment"
+        android:label="fragment_courses"
+        tools:layout="@layout/fragment_courses" >
+        <action
+            android:id="@+id/action_coursesFragment_to_fragmentCourseDetails"
+            app:destination="@id/fragmentCourseDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCourseDetails"
+        android:name="com.creativa.alzeraahyat.view.fragments.FragmentCourseDetails"
+        android:label="fragment_course_detials"
+        tools:layout="@layout/fragment_course_detials" />
 </navigation>

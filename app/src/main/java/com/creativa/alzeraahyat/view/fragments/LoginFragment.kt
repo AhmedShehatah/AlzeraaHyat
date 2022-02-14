@@ -1,10 +1,11 @@
-package com.creativa.alzeraahyat
+package com.creativa.alzeraahyat.view.fragments
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import com.creativa.alzeraahyat.R
 import com.creativa.alzeraahyat.databinding.FragmentLoginBinding
 
 
