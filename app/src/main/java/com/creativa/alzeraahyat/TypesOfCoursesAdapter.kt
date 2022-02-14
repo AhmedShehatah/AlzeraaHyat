@@ -2,7 +2,9 @@ package com.creativa.alzeraahyat
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+
 import androidx.navigation.findNavController
+
 import androidx.recyclerview.widget.RecyclerView
 import com.creativa.alzeraahyat.databinding.TypesModelBinding
 
