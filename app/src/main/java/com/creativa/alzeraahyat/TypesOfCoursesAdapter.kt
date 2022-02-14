@@ -32,8 +32,10 @@ class TypesOfCoursesAdapter(private val list: ArrayList<String>) :
         holder.text.text = item
 
         holder.root.setOnClickListener {
+
             it.findNavController().navigate(R.id.action_fragmentTypesOfCourses_to_coursesFragment)
         }
+
 
     }
 
