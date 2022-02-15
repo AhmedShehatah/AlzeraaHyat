@@ -3,10 +3,10 @@ package com.creativa.alzeraahyat.view.fragments
 import android.app.Dialog
 import android.content.Context
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
 import com.creativa.alzeraahyat.R
 
@@ -23,7 +23,7 @@ abstract class BaseFragment<T : ViewBinding> : Fragment() {
         get() = _binding as T
 
 
-    lateinit var mDialog: Dialog
+    private lateinit var mDialog: Dialog
     fun showProgressDialog(context: Context) {
         mDialog = Dialog(context)
         mDialog.setContentView(R.layout.fragment_base)
@@ -34,10 +34,6 @@ abstract class BaseFragment<T : ViewBinding> : Fragment() {
         mDialog.dismiss()
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater,

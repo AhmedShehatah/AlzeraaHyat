@@ -1,59 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="8dp">
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:elevation="5dp"
+    app:cardBackgroundColor="#F4F3F3"
+    app:cardCornerRadius="1dp">
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:id="@+id/course_price"
-            android:layout_alignParentLeft="true"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
 
-            <TextView
-                android:layout_marginTop="24dp"
+            <LinearLayout
+                android:id="@+id/course_price"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Price"
-                android:textSize="32sp"/>
-            <TextView
-                android:layout_marginTop="4dp"
-                android:layout_marginLeft="8dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="$00"
-                android:textSize="28sp"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/course_content"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignRight="@id/course_price"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="0dp"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="اسم الكورس" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="محتوى الكورس" />
-
-            <TextView
-                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="j kdsnf  infda id si i dfsi hhd " />
-        </LinearLayout>
-    </RelativeLayout>
-</ScrollView>
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:text="$00"
+                    android:textSize="28sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/course_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignRight="@id/course_price"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="اسم الكورس"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="100dp"
+                    android:text="محتوى الكورس \n- بند اول \n- بند اول\n- بند اول\n- بند اول"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

@@ -1,9 +1,13 @@
-package com.creativa.alzeraahyat
+package com.creativa.alzeraahyat.adapters
 
 import android.view.View
+import com.creativa.alzeraahyat.R
 import com.creativa.alzeraahyat.databinding.CourseGalleryBinding
 import com.creativa.alzeraahyat.databinding.CourseInfoBinding
+import com.creativa.alzeraahyat.databinding.GalleryModelBinding
 import com.creativa.alzeraahyat.databinding.TrainerInfoBinding
+import com.squareup.picasso.Picasso
+import com.xwray.groupie.GroupieAdapter
 import com.xwray.groupie.viewbinding.BindableItem
 
 class CoursesDetailsAdapter {
@@ -33,6 +37,11 @@ class CoursesDetailsAdapter {
 
     class GalleryDetails : BindableItem<CourseGalleryBinding>() {
         override fun bind(holder: CourseGalleryBinding, p1: Int) {
+            val adapter = GroupieAdapter()
+            adapter.add(GalleryModel())
+            adapter.add(GalleryModel())
+            adapter.add(GalleryModel())
+            holder.rvGallery.adapter = adapter
 
         }
 
@@ -40,6 +49,17 @@ class CoursesDetailsAdapter {
 
         override fun initializeViewBinding(p0: View): CourseGalleryBinding {
             return CourseGalleryBinding.bind(p0)
+        }
+    }
+
+    class GalleryModel : BindableItem<GalleryModelBinding>() {
+        override fun bind(holder: GalleryModelBinding, p1: Int) {
+//            Picasso.get().load(R.drawable.ic_land).into(holder.avatar)
+        }
+
+        override fun getLayout(): Int = R.layout.gallery_model
+        override fun initializeViewBinding(p0: View): GalleryModelBinding {
+            return GalleryModelBinding.bind(p0)
         }
     }
 

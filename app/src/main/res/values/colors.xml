@@ -9,7 +9,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="primary">#9ab324</color>
-    <color name="primary_light">#cee559</color>
-    <color name="primary_dark">#688300</color>
+    <color name="primary">#9AB324</color>
+    <color name="primary_light">#9AB324</color>
+    <color name="primary_dark">#163A2C</color>
 </resources>

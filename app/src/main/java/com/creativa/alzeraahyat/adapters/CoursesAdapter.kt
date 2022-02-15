@@ -26,8 +26,10 @@ class CoursesAdapter(private val list: ArrayList<Course>) :
         holder.courseName.text = item.name
         holder.courseTeacher.text = item.teacher
         holder.courseTime.text = item.time
+        holder.image.setImageResource(item.image)
         holder.itemView.setOnClickListener {
-            it.findNavController().navigate(R.id.action_coursesFragment_to_fragmentCourseDetails)
+            it.findNavController()
+                .navigate(R.id.action_coursesFragment_to_fragmentCourseDetails)
         }
 
     }
@@ -36,7 +38,7 @@ class CoursesAdapter(private val list: ArrayList<Course>) :
         return list.size
     }
 
-    class ViewHolder(val binding: ItemCourseBinding) : RecyclerView.ViewHolder(binding.root) {
+    class ViewHolder(binding: ItemCourseBinding) : RecyclerView.ViewHolder(binding.root) {
         val image = binding.imageView
         val courseName = binding.tvCourseName
         val courseTeacher = binding.tvCourseTeacher

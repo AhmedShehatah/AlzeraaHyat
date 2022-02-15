@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import com.creativa.alzeraahyat.R
 import com.creativa.alzeraahyat.adapters.CoursesAdapter
 import com.creativa.alzeraahyat.databinding.FragmentCoursesBinding
 import com.creativa.alzeraahyat.models.Course
@@ -22,9 +23,13 @@ class CoursesFragment : BaseFragment<FragmentCoursesBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val list = ArrayList<Course>()
 
-        for (i in 1..5) {
-            list.add(Course("", "Name", "Teacher", "5 hours"))
-        }
+        list.add(Course(R.drawable.farm1, "دورة زراعة الصوبة الزراعية", "اسلام", "5hours"))
+        list.add(Course(R.drawable.farm2, "دورة شبكات الري", "اسلام", "5hours"))
+        list.add(Course(R.drawable.farm3, "دورة التغذية والأعلاف", "اسلام", "5hours"))
+        list.add(Course(R.drawable.farm4, "دورة تخطيط وتنسيق الحدائق والمتزهات", "اسلام", "5hours"))
+        list.add(Course(R.drawable.farm6, "دورة المهارات الادارية للمهندسين الزرعايين والفنيين", "اسلام", "5hours"))
+        list.add(Course(R.drawable.farm5, "دورة المكافجة البيلوجية للافات الحشرية", "اسلام", "5hours"))
+        list.add(Course(R.drawable.farm7, "دورة استصلاح الاراضي  الزراعية", "اسلام", "5hours"))
 
         val adapter = CoursesAdapter(list)
         binding.recyclerView.adapter = adapter

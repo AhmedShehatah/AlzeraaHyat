@@ -6,8 +6,10 @@ import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
+import com.creativa.alzeraahyat.R
 import com.creativa.alzeraahyat.adapters.TypesOfCoursesAdapter
 import com.creativa.alzeraahyat.databinding.FragmentTypesOfCoursesBinding
+import com.creativa.alzeraahyat.models.CoursesType
 
 
 class FragmentTypesOfCourses : BaseFragment<FragmentTypesOfCoursesBinding>() {
@@ -18,11 +20,11 @@ class FragmentTypesOfCourses : BaseFragment<FragmentTypesOfCoursesBinding>() {
     override fun setupOnViewCreated(view: View) {
         navController = Navigation.findNavController(view)
         binding.rvTypes.layoutManager = GridLayoutManager(requireContext(), 2)
-        val list = ArrayList<String>()
-        list.add("اونلاين")
-        list.add("عملي")
-        list.add("الاختبارات")
-        list.add("المسار التعليمي")
+        val list = ArrayList<CoursesType>()
+        list.add(CoursesType("اونلاين", R.drawable.ic_baseline_laptop_mac_24))
+        list.add(CoursesType("عملي", R.drawable.ic_icon2))
+        list.add(CoursesType("الاختبارات", R.drawable.ic_test))
+        list.add(CoursesType("المسار التعليمي", R.drawable.ic_baseline_menu_book_24))
         binding.rvTypes.adapter = TypesOfCoursesAdapter(list)
     }
 }
